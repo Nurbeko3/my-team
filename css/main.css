@@ -427,6 +427,11 @@ body {
   background: white;
 }
 
+@media only screen and (max-width: 768px) {
+  .header-contact {
+    margin-left: 220px;
+  }
+}
 .hero-section {
   padding-bottom: 250px;
 }
@@ -477,6 +482,15 @@ body {
   line-height: 28px; /* 155.556% */
 }
 
+@media only screen and (max-width: 768px) {
+  .hero {
+    text-align: center;
+    flex-direction: column;
+  }
+  .hero-content {
+    text-align: center;
+  }
+}
 .build-section {
   background-color: #012F34;
 }
@@ -545,6 +559,15 @@ body {
   margin-top: 32px;
 }
 
+@media only screen and (max-width: 768px) {
+  .build {
+    flex-direction: column;
+  }
+  .build-cards {
+    margin-top: 64px;
+    padding: 0;
+  }
+}
 .delivery {
   position: relative;
   background-image: url(../images/delivery/bg-img-left.svg);

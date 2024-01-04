@@ -55,3 +55,12 @@
     display: flex;
     margin-top: 32px;
 }
+@media only screen and (max-width:768px){
+    .build{
+        flex-direction: column;
+    }
+    .build-cards{
+        margin-top: 64px;
+        padding: 0;
+    }
+}

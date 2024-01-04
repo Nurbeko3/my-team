@@ -42,3 +42,13 @@
     font-weight: 600;
     line-height: 28px; /* 155.556% */
 }
+@media only screen and (max-width:768px){
+    .hero{
+        text-align: center;
+        flex-direction: column;
+    }
+    .hero-content{
+        text-align: center;
+    }
+    
+}
