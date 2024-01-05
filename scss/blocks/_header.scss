@@ -28,6 +28,7 @@
     color: #FFF;
     padding: 10px 33px;
     margin-left: 577px;
+    display: block;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -40,9 +41,27 @@
 .header-contact:hover{
     color: #014E56;
     background: white;
+    
+}
+.header__hamburger-btn{
+    background: transparent;
+    border: none;
+    display: none;
 }
 @media only screen and (max-width:768px){
     .header-contact{
         margin-left: 220px;
+    }
+}
+@media only screen and (max-width:375px){
+    .navbar__list{
+        display: none;
+    }
+    .header__hamburger-btn{
+        display: block;
+        margin-left: 179px;
+    }
+    .header-contact{
+        display: none;
     }
 }

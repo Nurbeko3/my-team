@@ -26,6 +26,7 @@
     margin-left: 125px;
 }
 .invidual-card{
+    width: 445px;
     display: flex;
 }
 .invidual-content{
@@ -48,10 +49,12 @@
     line-height: 25px; /* 166.667% */
 }
 .easy-card{
+    width: 445px;
     display: flex;
     margin-top: 32px;
 }
 .product-card{
+    width: 445px;
     display: flex;
     margin-top: 32px;
 }
@@ -62,5 +65,44 @@
     .build-cards{
         margin-top: 64px;
         padding: 0;
+    }
+}
+@media only screen and (max-width:375px){
+    .build-section{
+        width: 100%;
+    }
+    .build{
+        flex-direction: column;
+    }
+    .build-content{
+        width: 240px;
+    }
+    .build-title{
+        padding-top: 32px;
+    }
+    .build-cards{
+        margin-top: 56px;
+        margin-left: 24px;
+    }
+    .invidual-card{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .easy-card{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .product-card{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .invidual-title{
+        padding-top: 16px;
+    }
+    .invidual-img{
+        margin-left: 200px;
     }
 }
