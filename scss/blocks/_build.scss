@@ -1,108 +1,76 @@
-.build-section{
+.service-section{
+    padding: 198px 0 140px;
     background-color: #012F34;
-}
-.build {
-    display: flex;
-    background-image: url(../images/build/build-bg-img.svg);
+    background-image: url("../images/build/build-bg-img.svg");
     background-repeat: no-repeat;
-    background-position-x: 1300px;
-    background-position-y: 440px;
+    background-size: 100px 244px;
+    background-position: bottom right;
 }
-.build-content{
+
+.service{
+    @include display($space:space-between, $items:start);
+}
+.service__title-wrapper{
+    position: relative;
     width: 445px;
-    padding-top: 140px;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -54px;
+        width: 50px;
+        height: 4px;
+        background-color: $pinkColor;
+    }
 }
-.build-title{
-    color: #FFF;
-    padding-top: 54px;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px; /* 100% */
+.service__title{
+    @include textStyle($fontSize:48px,$lineHeight:48px, $weight:700)
 }
-.build-cards{
-    padding-top: 198px;
-    padding-bottom: 140px;
-    margin-left: 125px;
+
+.service__list{
+    @include display($direction:column)
 }
-.invidual-card{
-    width: 445px;
-    display: flex;
+
+.service__item{
+    @include display();
+    
+    & + & {
+        margin-top: 32px;
+    }
 }
-.invidual-content{
+.service__item-content-wrapper{
     width: 445px;
     margin-left: 23px;
 }
-.invidual-title{
-    color: #F67E7E;
-    padding-bottom: 16px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px; /* 155.556% */
+.inner-wrap__title{
+    @include textStyle($weight:700, $textColor:$pinkColor);
+    margin-bottom: 16px;
 }
-.invidual-text{
-    color: #FFF;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25px; /* 166.667% */
+
+.inner-wrap__text{
+    @include textStyle($fontSize:15px,$lineHeight:25px,$weight:600);
+    
 }
-.easy-card{
-    width: 445px;
-    display: flex;
-    margin-top: 32px;
-}
-.product-card{
-    width: 445px;
-    display: flex;
-    margin-top: 32px;
-}
-@media only screen and (max-width:768px){
-    .build{
-        flex-direction: column;
+
+
+@media (max-width:980px){
+    .service-section{
+        padding: 136px 100px 0 98px;
+        background-position: top right;
     }
-    .build-cards{
-        margin-top: 64px;
-        padding: 0;
+    .service{
+        @include display($direction:column, $items:start);
     }
-}
-@media only screen and (max-width:375px){
-    .build-section{
+    .service__title-wrapper{
+        width: 100%;
+        margin-bottom: 64px;
+    }
+    .service__item-content-wrapper{
         width: 100%;
     }
-    .build{
-        flex-direction: column;
-    }
-    .build-content{
-        width: 240px;
-    }
-    .build-title{
-        padding-top: 32px;
-    }
-    .build-cards{
-        margin-top: 56px;
-        margin-left: 24px;
-    }
-    .invidual-card{
-        width: 100%;
-        text-align: center;
-        flex-direction: column;
-    }
-    .easy-card{
-        width: 100%;
-        text-align: center;
-        flex-direction: column;
-    }
-    .product-card{
-        width: 100%;
-        text-align: center;
-        flex-direction: column;
-    }
-    .invidual-title{
-        padding-top: 16px;
-    }
-    .invidual-img{
-        margin-left: 200px;
-    }
 }
+@media (max-width:580px){
+    
+}
+    

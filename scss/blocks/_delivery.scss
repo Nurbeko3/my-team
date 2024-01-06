@@ -1,7 +1,6 @@
 .delivery{
     position: relative;
-    background-image: url(../images/delivery/bg-img-left.svg);
-    background-repeat: no-repeat;
+    margin-left: 24px;
 }
 .delivery-bg-img-right{
     position: absolute;
@@ -12,6 +11,9 @@
 }
 .delivery-section{
     background-color: #004047;
+    background-image: url(../images/delivery/bg-img-left.svg);
+    background-repeat: no-repeat;
+    background-size: 147px 100px;
 }
 .delivery-title-class{
     width: 930px;
@@ -87,4 +89,105 @@
     background-image: url(../images/delivery/cards-bg-img.svg);
     background-repeat: no-repeat;
     background-position-x: 142px ;
+}
+@media (max-width:1007px){
+    .delivery-title-class{
+        width: 573px;
+        padding: 100px 97px 48px;
+    }
+    .delivery-title{
+        color: #FFF;
+        text-align: center;
+        font-family: Livvic , sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */
+    }
+    .delivery-font-change{
+        color: #79C8C7;
+        font-family: Livvic , sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .delivery{
+        background-image: url(../images/delivery/bg-img-left.svg);
+        background-repeat: no-repeat;
+        background-size: 147px 100px;
+        background-position: top left;
+    }
+    .info-cards{
+        flex-direction: column;
+        margin-left: 97px;
+    }
+    .Kady-card{
+        width: 573px;
+        padding-bottom: 48px;
+        background-image: url(../images/delivery/cards-bg-img.svg);
+        background-repeat: no-repeat;
+        background-position-x: 254px;
+    }
+    .Aisha-card{
+        width: 573px;
+        padding-bottom: 48px;
+        background-image: url(../images/delivery/cards-bg-img.svg);
+        background-repeat: no-repeat;
+        background-position-x: 254px;
+    }
+    .Artur-card{
+        width: 573px;
+        background-image: url(../images/delivery/cards-bg-img.svg);
+        background-repeat: no-repeat;
+        background-position-x: 254px;
+    }
+}
+@media (max-width:580px){
+    .delivery-title-class{
+        width: 445px;
+        padding-top: 140px;
+        margin-left: 24px;
+        margin-right: 24px;
+        padding-bottom: 48px;
+        
+    }
+    .delivery-title{
+        color: #FFF;
+        text-align: center;
+        font-family: Livvic , sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */
+    }
+    .delivery-font-change{
+        color: #79C8C7;
+        font-family: Livvic , sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .info-cards{
+        margin-left: 24px;
+    }
+    .Kady-card{
+        width: 327px;
+        background-image: url(../images/delivery/cards-bg-img.svg);
+        background-repeat: no-repeat;
+        background-position-x: 130px;
+    }
+    .Aisha-card{
+        width: 327px;
+        background-image: url(../images/delivery/cards-bg-img.svg);
+        background-repeat: no-repeat;
+        background-position-x: 130px;
+    }
+    .Artur-card{
+        width: 327px;
+        background-image: url(../images/delivery/cards-bg-img.svg);
+        background-repeat: no-repeat;
+        background-position-x: 130px;
+    }
 }
