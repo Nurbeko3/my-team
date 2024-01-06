@@ -40,6 +40,9 @@
     @include textStyle()
 }
 
+
+
+
 @media (max-width:1007px){
     .hero__title{
         @include textStyle($fontSize:100px, $lineHeight:90px, $weight:700);
